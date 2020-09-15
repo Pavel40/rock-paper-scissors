@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <h1>Rock, Paper, Scissors</h1>
+        <p>Rock beats scissors, paper beats rock, scissors beat paper. The game consists of just three turns!</p>
+
+        <h2>Score:</h2>
+        <p>You: <strong><span id="score_player">0</span></strong><br>
+            Computer: <strong><span id="score_computer">0</span></strong></p>
+
+        <div id="rock">
+            <p>Computer plays rock!</p>
+        </div>
+        <div id="paper">
+            <p>Computer plays paper!</p>
+        </div>
+        <div id="scissors">
+            <p>Computer plays scissors!</p>
+        </div>
+
+        <div id="buttons">
+            <button id="rock-button" onclick="play(1)">
+                Rock
+            </button>
+            <button id="paper-button" onclick="play(2)">
+                Paper
+            </button>
+            <button id="scissors-button" onclick="play(3)">
+                Scissors
+            </button>
+        </div>
+    </div>
+
+    <div id="win-container">
+        <div>
+            <h1>You won!</h1>
+            <button onclick="reset()" class="reset">Once again!</button>
+        </div>
+    </div>
+
+    <div id="lost-container">
+        <div>
+            <h1>You lost!</h1>
+            <button onclick="reset()" class="reset">Try again!</button>
+        </div>
+    </div>
+</body>
+
+</html>

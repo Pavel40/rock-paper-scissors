@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: rgb(0, 135, 232);
+    background: linear-gradient(142deg, rgba(0, 135, 232, 1) 0%, rgba(157, 237, 167, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+#rock {
+    display: none;
+}
+
+#paper {
+    display: none;
+}
+
+#scissors {
+    display: none;
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    margin: 10px;
+    text-align: center;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#rock-button {
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+#rock-button:hover {
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
+#paper-button {
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#paper-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#scissors-button {
+    padding: 15px;
+    border: 1px solid green;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 0, 0.4);
+}
+
+#scissors-button:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+#win-container {
+    display: none;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #adff2f;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#lost-container {
+    display: none;
+    width: 100%;
+    min-height: 100vh;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.reset {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+}
+
+.reset:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media only screen and (min-width: 500px) {
+    #buttons {
+        flex-direction: row;
+    }
+}
